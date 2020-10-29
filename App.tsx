@@ -1,18 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open</Text>
-    </View>
-  );
-}
+import Main from './src/Main';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignContent: 'center'
-  }
-});
+const App = () => {
+  return <Main />;
+};
+
+export default App;
