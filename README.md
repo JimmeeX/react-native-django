@@ -8,17 +8,17 @@ Travel Planner App built using [React Native Expo CLI](https://reactnative.dev/d
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/JimmeeX/travel-hustle-app.git
-```
+   ```bash
+   git clone https://github.com/JimmeeX/travel-hustle-app.git
+   ```
 
 2. [Install npm (Node Package Manager)](https://www.npmjs.com/get-npm)
 
 3. Navigate to Project Directory and update npm packages.
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 ### Running the app
 
