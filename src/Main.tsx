@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 const Main = () => {
+  const buttonPressHandler = () => {
+    const someVariable = 'hello';
+    console.log('HAHAHHA');
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open World</Text>
+      <Text>Open World!!!</Text>
+      <Button title="WOW" onPress={buttonPressHandler} />
     </View>
   );
 };
