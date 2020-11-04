@@ -2,12 +2,24 @@ version: '3.7'
 
 services:
   expo:
-    build: .
+    build: ./frontend
     ports:
-      - '19000:19000' # Port for React Native App
-      - '19001:19001' # Port for React Native Debugging
-    env_file: .env # Create a .env file in project root directory specifying REACT_NATIVE_PACKAGER_HOSTNAME=<local IP Address>
+      - 19000:19000 # Port for React Native App
+      - 19001:19001 # Port for React Native Debugging
+    env_file: ./frontend/.env # Create a .env file in project root directory specifying REACT_NATIVE_PACKAGER_HOSTNAME=<local IP Address>
     volumes:
-      - .:/app # Live Reload
+      - ./frontend:/app # Live Reload
       - /app/node_modules # Prevents node_modules being overwritten by host directory
     command: npm start
+    tty: true # Colorised Terminal Output
+  django:
+    build: ./backend
+    ports:
+      - 8000:8000 # Expose Backend API Port
+      - 5678:5678 # Expose Port for ptvsd debugger (https://testdriven.io/blog/django-debugging-vs-code/)
+    volumes:
+      - ./backend:/app
+    # env_file: .env
+    command: /usr/local/bin/gunicorn travelhustle.wsgi:application --workers 1 --bind :8000 --reload # Using Gunicorn with autoreload for development (will reload even with syntax error, which runserver is incapable of!)
+    tty: true # Colorised Terminal Output
+
