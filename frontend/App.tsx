@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Main from './src/Main';
+import Navigation from './src/navigation';
 
-const App = () => {
-  return <Main />;
+const App: React.FC = () => {
+  return <Navigation />;
 };
 
 export default App;
