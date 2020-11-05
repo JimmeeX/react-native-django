@@ -7,7 +7,9 @@ export interface MapScreenProps {}
 const MapScreen: React.FC<MapScreenProps> = () => {
   return (
     <View style={styles.container}>
-      <Text>This is the Map Screen</Text>
+      <Text style={{ fontFamily: 'open-sans-bold' }}>
+        This is the Map Screen
+      </Text>
       {/* <MapRoute /> */}
     </View>
   );
