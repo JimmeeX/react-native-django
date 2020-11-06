@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { StackNavigationOptions } from '@react-navigation/stack';
+
+import StyledText from '../../components/UI/StyledText';
 
 export interface MapScreenProps {}
 
 const MapScreen: React.FC<MapScreenProps> = () => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontFamily: 'open-sans-bold' }}>
-        This is the Map Screen
-      </Text>
+      <StyledText>This is the Map Screen!</StyledText>
       {/* <MapRoute /> */}
     </View>
   );
@@ -17,17 +17,6 @@ const MapScreen: React.FC<MapScreenProps> = () => {
 
 export const screenOptions: StackNavigationOptions = {
   headerTitle: 'Map'
-  // headerLeft: () => (
-  //   <HeaderButtons HeaderButtonComponent={HeaderButton}>
-  //     <Item
-  //       title="Menu"
-  //       iconName={Platform.OS === 'android' ? 'md-menu' : 'ios-menu'}
-  //       onPress={() => {
-  //         navData.navigation.toggleDrawer();
-  //       }}
-  //     />
-  //   </HeaderButtons>
-  // )
 };
 
 const styles = StyleSheet.create({

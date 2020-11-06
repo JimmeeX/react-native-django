@@ -1,33 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { StackNavigationOptions } from '@react-navigation/stack';
+
+import StyledText from '../../components/UI/StyledText';
 
 export interface CalendarScreenProps {}
 
 const CalendarScreen: React.FC<CalendarScreenProps> = () => {
   return (
     <View style={styles.container}>
-      <Text>This is the Calendar Screen</Text>
+      <StyledText>This is the Calendar Screen</StyledText>
     </View>
   );
 };
-
-// export const screenOptions = () => {
-//   return {
-//     headerTitle: 'Calendar'
-//     // headerLeft: () => (
-//     //   <HeaderButtons HeaderButtonComponent={HeaderButton}>
-//     //     <Item
-//     //       title="Menu"
-//     //       iconName={Platform.OS === 'android' ? 'md-menu' : 'ios-menu'}
-//     //       onPress={() => {
-//     //         navData.navigation.toggleDrawer();
-//     //       }}
-//     //     />
-//     //   </HeaderButtons>
-//     // )
-//   };
-// };
 
 export const screenOptions: StackNavigationOptions = {
   headerTitle: 'Calendar'
