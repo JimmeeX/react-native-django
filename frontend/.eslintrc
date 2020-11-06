@@ -6,13 +6,21 @@
   "root": true,
   "extends": [
     "airbnb-typescript",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/react"
   ],
+  "plugins": ["jest"],
   "rules": {
     "@typescript-eslint/no-use-before-define": "off",
     "react/prop-types": "off",
     "global-require": "off"
+  },
+  "settings": {
+    "jest": {
+      "version": 26
+    }
   }
 }

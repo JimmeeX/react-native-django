@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import StyledText from '../StyledText';
 
 describe('StyledText Component', () => {
-  it('matches snapshot', async () => {
+  it('matches snapshot', () => {
     const tree = renderer
       .create(<StyledText>Snapshot test</StyledText>)
       .toJSON();

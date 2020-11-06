@@ -8,6 +8,6 @@ exports[`StyledText Component matches snapshot 1`] = `
     }
   }
 >
-  Snapshot test.
+  Snapshot test
 </Text>
 `;
