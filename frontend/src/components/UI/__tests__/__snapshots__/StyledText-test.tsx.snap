@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`StyledText Component matches snapshot 1`] = `
 <Text
   style={
     Object {
@@ -8,6 +8,6 @@ exports[`renders correctly 1`] = `
     }
   }
 >
-  Snapshot test!
+  Snapshot test.
 </Text>
 `;

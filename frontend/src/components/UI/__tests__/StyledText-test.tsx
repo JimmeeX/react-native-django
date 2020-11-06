@@ -3,10 +3,12 @@ import renderer from 'react-test-renderer';
 
 import StyledText from '../StyledText';
 
-it(`renders correctly`, () => {
-  const tree = renderer
-    .create(<StyledText>Snapshot test!</StyledText>)
-    .toJSON();
+describe('StyledText Component', () => {
+  it('matches snapshot', async () => {
+    const tree = renderer
+      .create(<StyledText>Snapshot test</StyledText>)
+      .toJSON();
 
-  expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
+  });
 });
