@@ -27,5 +27,8 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "${workspaceFolder}/backend/venv/bin/flake8",
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "${workspaceFolder}/backend/venv/bin/black"
+  "python.formatting.blackPath": "${workspaceFolder}/backend/venv/bin/black",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/backend/**"
+  ]
 }
