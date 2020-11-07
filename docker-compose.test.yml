@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  expo:
+    build: ./frontend
+    ports:
+      - 19000:19000 # Port for React Native App
+    environment:
+      - REACT_NATIVE_PACKAGER_HOSTNAME=192.168.1.16
+    volumes:
+      - ./frontend:/app # Live Reload
+      - /app/node_modules # Prevents node_modules being overwritten by host directory
+    command: npm start
+  django:
+    build: ./backend
+    ports:
+      - 8000:8000 # Expose Backend API Port
+    volumes:
+      - ./backend:/app
+    command: /usr/local/bin/gunicorn travelhustle.wsgi:application --workers 1 --bind :8000 --reload # Using Gunicorn with autoreload for development (will reload even with syntax error, which runserver is incapable of!)

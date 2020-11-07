@@ -8,9 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Install modules
         working-directory: ./frontend
         run: npm install
+
       - name: Run tests
         working-directory: ./frontend
         run: npm test
