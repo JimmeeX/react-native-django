@@ -1,6 +1,13 @@
 name: Docker Compose CI
 
-on: push
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
 
 jobs:
   test:
@@ -13,6 +20,4 @@ jobs:
         run: docker-compose --file docker-compose.test.yml up -d
 
       - name: Test Ports
-        run: |
-          docker run --network container:travel-hustle-app_expo_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:19000
-          docker run --network container:travel-hustle-app_django_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8000
+        run: docker run --network container:travel-hustle-app_django_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8000
