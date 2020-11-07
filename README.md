@@ -73,7 +73,7 @@ You can now test the App on your real phone (by scanning the QR Code via Expo ap
 ### Dev Tools
 
 - [Docker](https://www.docker.com/) - Sets up the dev environment effortlessly
-- [flake8]((https://flake8.pycqa.org/en/latest/)) (Python Linter)
+- [flake8](https://flake8.pycqa.org/en/latest/) (Python Linter)
 - [pylint](https://flake8.pycqa.org/en/latest/) (Python Linter)
 - [black](https://github.com/psf/black) (Python Auto Formatter)
 - [ptsvd](https://github.com/microsoft/ptvsd) (Python Debugger)
