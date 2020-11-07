@@ -22,7 +22,11 @@ jobs:
 
       - name: Run ESLint
         working-directory: ./frontend
-        run: eslint --ext .js,.jsx,.ts,.tsx .
+        run: ./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx .
+
+      - name: Run TSLint
+        working-directory: ./frontend
+        run: ./node_modules/.bin/tsc
 
       - name: Run Jest Tests
         working-directory: ./frontend

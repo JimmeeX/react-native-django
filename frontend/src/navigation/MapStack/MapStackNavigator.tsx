@@ -29,7 +29,7 @@ const MapStackNavigator: React.FC<MapStackNavigatorProps> = () => {
   return (
     <MapStack.Navigator screenOptions={defaultNavOptions}>
       <MapStack.Screen
-        name="Map"
+        name="FIXME"
         component={MapScreen}
         options={mapScreenOptions}
       />

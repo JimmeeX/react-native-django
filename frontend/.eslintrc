@@ -8,13 +8,15 @@
     "airbnb-typescript",
     "plugin:jest/recommended",
     "plugin:jest/style",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
+    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     "prettier/react"
   ],
-  "plugins": ["jest"],
+  "plugins": ["jest", "@typescript-eslint"],
   "rules": {
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-empty-interface": "off",
     "react/prop-types": "off",
     "global-require": "off"
   },
