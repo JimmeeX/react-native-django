@@ -26,7 +26,7 @@ jobs:
 
       - name: Run TSLint
         working-directory: ./frontend
-        run: ./node_modules/.bin/tsc
+        run: ./node_modules/.bin/tsc --noEmit
 
       - name: Run Jest Tests
         working-directory: ./frontend
