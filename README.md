@@ -1,13 +1,11 @@
-# Travel Hustle App
-
-Travel Planner Mobile App for iOS and Android.
+# React Native & Django Setup
 
 ## Tech-stack
 
 - [React Native](https://reactnative.dev/) (using [Expo](https://docs.expo.io/) and [TypeScript](https://www.typescriptlang.org/) workflow) for the frontend client (mobile app)
 - [Django](https://www.djangoproject.com/) for the server backend
 
-## Notable Packages (so far)
+## Notable Packages (TODO)
 
 Name | Stack | Purpose
 ---|---|---
@@ -22,11 +20,11 @@ Name | Stack | Purpose
 
 1. Clone the repository
 
-   ```git clone https://github.com/JimmeeX/travel-hustle-app.git```
+   ```git clone https://github.com/JimmeeX/react-native-django.git```
 
 2. Navigate to the directory
 
-    ```cd travel-hustle-app```
+    ```cd react-native-django```
 
 3. Create ```.env``` file in ```./frontend``` directory and add the following:
 
@@ -42,17 +40,17 @@ Name | Stack | Purpose
 
 1. Clone the repository
 
-   ```git clone https://github.com/JimmeeX/travel-hustle-app.git```
+   ```git clone https://github.com/JimmeeX/react-native-django.git```
 
 2. [Install npm (Node Package Manager)](https://www.npmjs.com/get-npm).
 
-3. Install npm packages in `travel-hustle-app/frontend`.
+3. Install npm packages in `react-native-django/frontend`.
 
    ```bash
    npm install
    ```
 
-4. Create a virtual Python environment in `travel-hustle-app/backend` and install required packages.
+4. Create a virtual Python environment in `react-native-django/backend` and install required packages.
 
    ```bash
    virtualenv -p python3 venv
