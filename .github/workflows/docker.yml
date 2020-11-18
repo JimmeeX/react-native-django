@@ -20,8 +20,8 @@ jobs:
         run: docker-compose --file docker-compose.test.yml up -d
 
       - name: Test Django Ports
-        run: docker run --network container:travel-hustle-app_django_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8000
+        run: docker run --network container:react-native-django_django_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8000
 
       # TODO: Figure out why this curl command returns an Error Code 7 when run
       # - name: Test Expo Ports
-      # run: docker run --network container:travel-hustle-app_expo_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:19000
+      # run: docker run --network container:react-native-django_expo_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:19000

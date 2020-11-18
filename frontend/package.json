@@ -52,5 +52,5 @@
     "typescript": "~3.9.5"
   },
   "private": true,
-  "name": "my-project"
+  "name": "react-native-django"
 }
